@@ -1,0 +1,118 @@
+.shop-category{
+    max-width: 80%;
+     margin: auto;
+}
+.shopcategory-banner {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+}
+
+.shop-category-indexSort {
+    display: flex;
+    margin: 0px 170px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopcategory-sort {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 50px
+}
+
+.shop-category-indexSort p span {
+    font-weight: 600;
+  
+}
+
+.shopcategory-products{
+   
+    margin-top: 10px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    
+  
+}
+.shopcategory-products.image{
+    max-height: 400px;
+}
+.shopcategory-loadmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width: 233px;
+     height: 69px;
+     background: rgb(191, 187, 187);
+     color: rgb(247, 245, 245);
+     font-size: 18px;
+     font-weight: 500;
+     border-radius: 30px;
+     margin-top: 100px;
+}
+.shopcategory-loadmore:hover{
+   background: rgb(234, 102, 102);
+   transition: .3s;
+}
+@media(max-width:1280px){
+    .shopcategory-banner{
+        margin: 20px auto;
+        width: 90%;
+    }
+    .shop-category-indexSort{
+        width: 90%;
+        margin: auto;
+    }
+    .shopcategory-sort{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .shop-category-indexSort p{
+        font-size: 12px;
+
+    }
+    .shopcategory-products{
+        width: 90%;
+        margin: 10px auto;
+        row-gap: 40px;
+
+    }
+    .shopcategory-products .item{
+        margin: auto;
+    }
+    .shopcategory-loadmore{
+        margin: 100px auto;
+        width: 200px;
+        height: 60px ;
+        font-size: 16px;
+    }
+}
+@media(max-width:800px){
+    .shopcategory-banner{
+    
+        width: 95%;
+    }
+    .shopcategory-products{
+        width: 95%;
+    }
+    .shopcategory-loadmore{
+        margin: 60px auto;
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+    }
+}
+@media(max-width:500px){
+    
+    .shopcategory-products{
+        grid-template-columns: 1fr 1fr;
+    }
+   
+}
